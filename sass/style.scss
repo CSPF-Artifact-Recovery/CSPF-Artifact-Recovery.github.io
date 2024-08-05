@@ -98,11 +98,11 @@ html {
   color: $color_1;
   background-color: $background-color_1;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1;
 }
 p {
   font-family: $font-family_2;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .ascii {
   font-family: $font-family_1;
@@ -113,21 +113,22 @@ p {
   font-family: $font-family_2;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 a {
   font-family: $font-family_2;
   color: $color_1;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 h1 {
   font-family: $font-family_2;
+  font-size: 2em;
 }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $color_1;
+  border-top: 5px solid $color_1;
   margin: 1em 0;
   padding: 0;
 }
