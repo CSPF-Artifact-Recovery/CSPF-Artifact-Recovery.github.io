@@ -1,143 +1,60 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=VT323&display=swap");
 
+$color_1: #44ff00;
+$color_2: #fff;
+$font-family_1: JBMono, monospace;
+$background-color_1: #000000;
+
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-html {
-  color: #44ff00;
-  background-color: #000000;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
  * Customize the background color to match your design.
  */
-
-
 @font-face {
   font-family: VT323;
-  src: url("fonts/VT323/VT323-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
-
 @font-face {
   font-family: JBMono;
-  src: url("fonts/JetBrainsMono/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
-
-p {
-  font-family: JBMono, monospace;
-  font-size: 1.5em;
-}
-
-.ascii {
-  font-family: JBMono, monospace;;
-  white-space: pre;
-  font-size: 1em;
-
-}
-
-.report {
-  font-family: JBMono, monospace;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-size: 1.5em;
-}
-
-a {
-  font-family: JBMono, monospace;
-  color: #44ff00;
-  font-size: 1.5em;
-}
-
-::-moz-selection {
-  background: #000000;
-  text-shadow: none;
-}
-
-::selection {
-  background: #000000;
-  text-shadow: none;
-}
-
 /*
  * A better looking default horizontal rule
  */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
 /*
  * Remove default fieldset styles.
  */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
 /*
  * Allow only vertical resizing of textareas.
  */
-
-textarea {
-  resize: vertical;
-}
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -146,7 +63,102 @@ textarea {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* Style adjustments for viewports that meet the condition */
+/* Style adjustments for high resolution devices */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+/*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+html {
+  color: $color_1;
+  background-color: $background-color_1;
+  font-size: 1em;
+  line-height: 1.4;
+}
+p {
+  font-family: $font-family_1;
+  font-size: 1.5em;
+}
+.ascii {
+  font-family: $font-family_1;
+  white-space: pre;
+  font-size: 1em;
+}
+.report {
+  font-family: $font-family_1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 1.5em;
+}
+a {
+  font-family: $font-family_1;
+  color: $color_1;
+  font-size: 1.5em;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio {
+  vertical-align: middle;
+}
+canvas {
+  vertical-align: middle;
+}
+iframe {
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+svg {
+  vertical-align: middle;
+}
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.hidden {
+  display: none !important;
+}
+[hidden] {
+  display: none !important;
+}
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -157,133 +169,113 @@ textarea {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+.visually-hidden.focusable {
+  &:active {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
 }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
   visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+.clearfix {
+  &::before {
+    content: "";
+    display: table;
+  }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
 @media print {
-  *,
-  *::before,
-  *::after {
+  * {
     background: #000000 !important;
-    color: #fff !important;
-    /* Black prints faster */
+    color: $color_2 !important;
     box-shadow: none !important;
     text-shadow: none !important;
+    &::before {
+      background: #000000 !important;
+      color: $color_2 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    &::after {
+      background: #000000 !important;
+      color: $color_2 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
   }
-
-  a,
-  a:visited {
+  a {
     text-decoration: underline;
+    &:visited {
+      text-decoration: underline;
+    }
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  a[href] {
+    &::after {
+      content: " (" attr(href) ")";
+    }
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  abbr[title] {
+    &::after {
+      content: " (" attr(title) ")";
+    }
   }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  a[href^="#"] {
+    &::after {
+      content: "";
+    }
   }
-
+  a[href^="javascript:"] {
+    &::after {
+      content: "";
+    }
+  }
   pre {
     white-space: pre-wrap !important;
+    border: 1px solid #999;
+    page-break-inside: avoid;
   }
-
-  pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
-  tr,
+  tr {
+    page-break-inside: avoid;
+  }
   img {
     page-break-inside: avoid;
   }
-
-  p,
-
-  h2,
-  h3 {
+  p {
     orphans: 3;
     widows: 3;
   }
-
-  h2,
+  h2 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
   h3 {
+    orphans: 3;
+    widows: 3;
     page-break-after: avoid;
   }
 }
-
