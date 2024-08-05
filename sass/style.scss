@@ -4,6 +4,7 @@
 $color_1: #44ff00;
 $color_2: #fff;
 $font-family_1: JBMono, monospace;
+$font-family_2: VT323, monospace;
 $background-color_1: #000000;
 
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
@@ -100,7 +101,7 @@ html {
   line-height: 1.4;
 }
 p {
-  font-family: $font-family_1;
+  font-family: $font-family_2;
   font-size: 1.5em;
 }
 .ascii {
@@ -109,21 +110,24 @@ p {
   font-size: 1em;
 }
 .report {
-  font-family: $font-family_1;
+  font-family: $font-family_2;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: 1.5em;
 }
 a {
-  font-family: $font-family_1;
+  font-family: $font-family_2;
   color: $color_1;
   font-size: 1.5em;
+}
+h1 {
+  font-family: $font-family_2;
 }
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $color_1;
   margin: 1em 0;
   padding: 0;
 }
